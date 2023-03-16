@@ -28,7 +28,7 @@ export const SubscribeToMailList: React.FC = () => {
         />
         <button
           aria-label="Join Newsletter"
-          className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-blue-400 font-semibold text-white hover:bg-blue-500/90 active:bg-blue-500 active:text-white/90 ml-4 flex-none"
+          className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 dark:bg-zinc-900 dark:text-white text-zinc-900 font-semibold hover:bg-zinc-900 hover:text-white active:bg-black active:text-white dark:hover:bg-zinc-50 dark:hover:text-black dark:active:bg-zinc-100 ml-4 flex-none"
           type="submit"
         >
           Join
