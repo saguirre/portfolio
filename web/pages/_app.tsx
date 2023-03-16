@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes';
 
 const Portfolio = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider attribute="class" enableSystem={false}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
