@@ -78,7 +78,7 @@ const Tools: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                             <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                               Hey, I don't judge, so I guess don't judge me? What can I say? It's an incredible chair.
                               Given my completely melted down body position when spending tons of time sitting down, it
-                              get's the job done.
+                              gets the job done.
                             </p>
                           </li>
                         </ul>
