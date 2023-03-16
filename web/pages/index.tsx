@@ -69,19 +69,19 @@ const Home: NextPage = () => {
                 />
                 <ArticleCard
                   title="The Age of JAMstack: Enhancing Performance, Scalability, and Security in Modern Web Development"
-                  date="March 15, 2023"
+                  date="February 20, 2023"
                   paragraph="Let's uncover the transformative power of JAMstack together, showcasing popular frameworks like Next.js, Gatsby, and Nuxt.js. I'll guide you through how this cutting-edge architecture elevates site performance, scalability, and security."
                   href="/the-age-of-jamstack"
                 />
                 <ArticleCard
                   title="UX/UI Design Trends for a Post-Pandemic World: How Remote Work and Digital Transformation Shape User Experience"
-                  date="March 15, 2023"
+                  date="February 8, 2023"
                   paragraph="We'll investigate how remote work and digitalization influence UX/UI design trends. Gain insights into the latest approaches and best practices for creating user-centric, accessible web interfaces in a rapidly evolving digital landscape."
                   href="ux-ui-in-the-post-pandemic-world"
                 />
                 <ArticleCard
                   title="Harnessing the Power of Machine Learning in Frontend Development: Tools and Techniques for Smarter UI/UX"
-                  date="March 15, 2023"
+                  date="January 13, 2023"
                   paragraph="Join me on a journey to explore the integration of machine learning and AI technologies in frontend development. Together, we'll learn about ML frameworks, libraries, and APIs that enable more intelligent, personalized, and efficient user experiences on the web."
                   href="harnessing-the-power-of-machine-learning"
                 />
