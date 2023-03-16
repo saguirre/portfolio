@@ -12,11 +12,11 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ resolvedUrl }) => {
   return (
     <>
-      <div className="hidden sm:flex flex-row items-center justify-center w-full max-w-lg divide-x divide-zinc-200 dark:divide-zinc-700/80 border border-zinc-200 dark:border-zinc-700/80 px-8 rounded-full shadow-md">
+      <div className="hidden sm:flex flex-row items-center justify-center w-full max-w-md md:max-w-lg divide-x divide-zinc-200 dark:divide-zinc-700/80 border border-zinc-200 dark:border-zinc-700/80 px-8 rounded-full shadow-md">
         {DefaultHeaders.map((header: HeaderItem, index) => (
           <Link key={header.href} href={header.href}>
             <div
-              className={classNames('py-1.5 w-32 flex flex-col items-center justify-center', {
+              className={classNames('py-1.5 w-28 md:w-32 flex flex-col items-center justify-center', {
                 'rounded-l-lg': index === 0,
                 'rounded-r-lg': index === DefaultHeaders.length - 1,
                 'rounded-l-full text-blue-400 shadow-inner': resolvedUrl === header.href && index === 0,
