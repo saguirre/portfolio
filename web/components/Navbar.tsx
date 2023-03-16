@@ -10,7 +10,6 @@ interface NavbarProps {
   resolvedUrl: string;
 }
 export const Navbar: React.FC<NavbarProps> = ({ resolvedUrl }) => {
-  console.log(resolvedUrl);
   return (
     <>
       <div className="hidden sm:flex flex-row items-center justify-center w-full max-w-md md:max-w-lg divide-x divide-zinc-200 dark:divide-zinc-700/80 border border-zinc-200 dark:border-zinc-700/80 px-8 rounded-full shadow-md">

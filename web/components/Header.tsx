@@ -12,16 +12,16 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }) => {
   return (
     <div className="flex flex-row items-center justify-end gap-3 sm:justify-between w-full pt-2 max-w-4xl px-3">
-      <div
-        className={classNames(
-          'flex flex-col items-center justify-center mr-auto sm:mr-0 surrounding-border rounded-full',
-          {
-            'p-1': !hideImage,
-            'p-3': hideImage,
-          }
-        )}
-      >
-        <Link href="/">
+      <Link href="/">
+        <div
+          className={classNames(
+            'flex flex-col items-center justify-center mr-auto sm:mr-0 surrounding-border rounded-full',
+            {
+              'p-1': !hideImage,
+              'p-3': hideImage,
+            }
+          )}
+        >
           {hideImage && <HomeIcon className="h-5 w-5 text-blue-400" />}
           {!hideImage && (
             <Image
@@ -33,8 +33,8 @@ export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }
               alt="Profile Picture"
             />
           )}
-        </Link>
-      </div>
+        </div>
+      </Link>
       <Navbar resolvedUrl={resolvedUrl} />
       <ThemeButton />
     </div>
