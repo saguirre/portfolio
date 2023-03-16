@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Fullstack Engineer, freelancer and lifelong learner.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             Welcome to my portfolio! I'm Santiago Aguirre, a Fullstack Engineer with 5+ years of experience in React,
             Node, and Angular. I'm passionate about creating efficient and user-friendly web applications. Take a look
             at my work and let's connect!

@@ -21,7 +21,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                 <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                   Things I've worked on, for fun, or for work!
                 </h1>
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="mt-6 paragraph">
                   I've worked on many different personal projects, some of which I can showcase and others not so much
                   (yeah, I never finished them, okay?). I'll list the ones I'm proud of here, as well as some work
                   related projects that are available for outside viewing.

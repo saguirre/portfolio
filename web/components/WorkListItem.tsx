@@ -27,9 +27,9 @@ export const WorkListItem: React.FC<WorkListItemProps> = ({ companyName, dateSta
         <dt className="sr-only">Company</dt>
         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">{companyName}</dd>
         <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">{role}</dd>
+        <dd className="text-xs text-zinc-700 dark:text-zinc-200">{role}</dd>
         <dt className="sr-only">Date</dt>
-        <dd className="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2019 until Present">
+        <dd className="ml-auto text-xs text-zinc-600 dark:text-zinc-300" aria-label="2019 until Present">
           <time dateTime="2019">{dateStarted}</time>
           <span aria-hidden="true">—</span>
           <time dateTime="2023">{dateEnded || 'Present'}</time>

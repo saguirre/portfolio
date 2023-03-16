@@ -6,4 +6,7 @@
   .surrounding-border {
     @apply border dark:hover:border-zinc-600 border-zinc-200 dark:border-zinc-700/80;
   }
+  .paragraph {
+    @apply text-base text-zinc-600 dark:text-zinc-400;
+  }
 }

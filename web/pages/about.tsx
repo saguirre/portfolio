@@ -38,7 +38,7 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                     I'm Santiago Aguirre, a Fullstack Engineer with a passion for Web development.
                   </h1>
-                  <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+                  <div className="mt-6 space-y-7 paragraph">
                     <p>
                       My passion for technology started at a young age when I built my first website at 13 years old
                       using HTML, CSS, and, ahem, Flash Player (let's not talk about that one). From there, my curiosity

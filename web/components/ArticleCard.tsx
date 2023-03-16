@@ -18,7 +18,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ title, date, paragraph
         </Link>
       </h2>
       <time
-        className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+        className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-600 dark:text-zinc-300 pl-3.5"
         dateTime="2022-09-05"
       >
         <span className="absolute inset-y-0 -left-1.5 flex items-center" aria-hidden="true">
@@ -26,7 +26,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ title, date, paragraph
         </span>
         {date}
       </time>
-      <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{paragraph}</p>
+      <p className="relative z-10 mt-2 text-sm text-zinc-700 dark:text-zinc-300">{paragraph}</p>
       <div
         aria-hidden="true"
         className="relative z-10 mt-4 flex items-center w-full justify-end text-sm font-medium text-blue-400"

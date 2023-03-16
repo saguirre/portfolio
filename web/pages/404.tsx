@@ -17,34 +17,34 @@ const FourOhFour: NextPage = () => {
             The page you requested wasn't found, but so you don't leave empty handed here's a story called{' '}
             <span className="italic">The Case of Missing Socks.</span>
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             Once upon a time, in a tiny village, there lived a forgetful yet charming old lady named Granny Whiskers.
             She had a peculiar problem - her socks were always going missing!
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             One day, Granny Whiskers was in a hurry to attend a village meeting. To her dismay, she couldn't find a
             matching pair of socks. Frustrated, she grabbed two odd socks and left her house, determined to find the
             cause of her missing socks.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             During the meeting, she shared her problem with the villagers. To her surprise, many of them had the same
             issue. The village was abuzz with theories - sock goblins, magical sock-devouring washing machines, and even
             the idea of an underground sock black market.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             A wise old man, who had been silent throughout the discussion, finally spoke up. He suggested that perhaps
             the answer was not in finding the lost socks, but in finding the lesson within the situation.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             The villagers were puzzled but decided to give it a try. They stopped worrying about their missing socks and
             started to embrace the mismatched pairs they were left with.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             Soon, the village became famous for its quirky, colorful socks. Visitors from all over came to witness the
             villagers' unique sense of style. Granny Whiskers and her neighbors had turned a frustrating situation into
             a delightful lesson in creativity, self-expression, and letting go of the little things.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 paragraph">
             And so, the mystery of the missing socks remained unsolved, but the village had found something much more
             valuable - the joy in embracing life's imperfections.
           </p>
