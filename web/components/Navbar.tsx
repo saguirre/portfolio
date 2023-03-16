@@ -10,6 +10,7 @@ interface NavbarProps {
   resolvedUrl: string;
 }
 export const Navbar: React.FC<NavbarProps> = ({ resolvedUrl }) => {
+  console.log(resolvedUrl);
   return (
     <>
       <div className="hidden sm:flex flex-row items-center justify-center w-full max-w-md md:max-w-lg divide-x divide-zinc-200 dark:divide-zinc-700/80 border border-zinc-200 dark:border-zinc-700/80 px-8 rounded-full shadow-md">
@@ -19,9 +20,9 @@ export const Navbar: React.FC<NavbarProps> = ({ resolvedUrl }) => {
               className={classNames('py-1.5 w-28 md:w-32 flex flex-col items-center justify-center', {
                 'rounded-l-lg': index === 0,
                 'rounded-r-lg': index === DefaultHeaders.length - 1,
-                'rounded-l-full text-blue-400 shadow-inner': resolvedUrl === header.href && index === 0,
-                'rounded-r-full text-blue-400 shadow-inner':
-                  resolvedUrl === header.href && index === DefaultHeaders.length - 1,
+                'rounded-l-3xl text-blue-400 shadow-inner': resolvedUrl == header.href && index === 0,
+                'rounded-r-3xl text-blue-400 shadow-inner':
+                  resolvedUrl == header.href && index === DefaultHeaders.length - 1,
                 'text-blue-400 shadow-inner': resolvedUrl === header.href,
                 'hover:text-blue-500 hover:dark:text-zinc-200': resolvedUrl !== header.href,
               })}

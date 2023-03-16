@@ -7,7 +7,7 @@ interface AboutPageProps {
 }
 const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
   return (
-    <Layout resolvedUrl={resolvedUrl}>
+    <Layout resolvedUrl={resolvedUrl} hideImage>
       <div className="sm:px-8 mt-16 sm:mt-32">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">
@@ -23,7 +23,7 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                       height="800"
                       decoding="async"
                       data-nimg="1"
-                      className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                      className="aspect-square rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
                       loading="lazy"
                     />
                   </div>
