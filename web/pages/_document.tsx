@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 const Document: React.FC = () => {
   return (
-    <Html className="antialiased min-h-screen bg-zinc-50 dark:bg-black">
+    <Html className="antialiased min-h-screen bg-zinc-50 dark:bg-black" lang='en'>
       <Head>
         <title>Santiago Aguirre - Portfolio</title>
         <meta property="og:title" content="Santiago Aguirre - Portfolio" key="title" />

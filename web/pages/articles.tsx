@@ -1,4 +1,5 @@
 import type { GetServerSidePropsContext, NextPage } from 'next';
+import Head from 'next/head';
 import { ArticleFullCard } from '../components/ArticleFullCard';
 import { Layout } from '../components/Layout';
 
@@ -7,7 +8,10 @@ interface ArticlesPageProps {
 }
 const Articles: NextPage<ArticlesPageProps> = ({ resolvedUrl }) => {
   return (
-    <Layout resolvedUrl={resolvedUrl} >
+    <Layout resolvedUrl={resolvedUrl}>
+      <Head>
+        <meta name="Articles page" content="Santiago Aguirre's Articles" />
+      </Head>
       <div className="sm:px-8 mt-16 sm:mt-32">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">

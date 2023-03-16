@@ -24,6 +24,7 @@ export const ThemeButton: React.FC = () => {
       )}
       {mounted && (
         <button
+          aria-label='Update Theme'
           onClick={updateTheme}
           className="cursor-pointer surrounding-border hover:text-zinc-500 text-zinc-400 dark:hover:text-zinc-400 dark:text-zinc-500 shadow-md rounded-full p-3 flex flex-col items-center justify-center"
         >

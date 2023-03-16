@@ -1,5 +1,6 @@
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
 import type { GetServerSidePropsContext, NextPage } from 'next';
+import Head from 'next/head';
 import { Layout } from '../components/Layout';
 
 interface AboutPageProps {
@@ -8,6 +9,9 @@ interface AboutPageProps {
 const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
   return (
     <Layout resolvedUrl={resolvedUrl} hideImage>
+      <Head>
+        <meta name="About page" content="All of Santiago Aguirre's personal information - plus an introduction." />
+      </Head>
       <div className="sm:px-8 mt-16 sm:mt-32">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">
