@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }
         <title>{titleFromResolvedUrl}</title>
         <meta property="og:title" content="Santiago Aguirre - Portfolio" key="title" />
       </Head>
-      <Link href="/">
+      <Link href="/" aria-label='Link home'>
         <div
           className={classNames(
             'flex flex-col items-center justify-center mr-auto sm:mr-0 surrounding-border rounded-full',

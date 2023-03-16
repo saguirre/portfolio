@@ -18,7 +18,7 @@ export const ArticleFullCard: React.FC<ArticleFullCardProps> = ({ title, date, p
           </a>
         </h2>
         <time
-          className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+          className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-700 dark:text-zinc-300 pl-3.5"
           dateTime="2022-09-05"
         >
           <span className="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
@@ -26,14 +26,14 @@ export const ArticleFullCard: React.FC<ArticleFullCardProps> = ({ title, date, p
           </span>
           {date}
         </time>
-        <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{paragraph}</p>
-        <div aria-hidden="true" className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+        <p className="relative z-10 mt-2 text-sm text-zinc-700 dark:text-zinc-200">{paragraph}</p>
+        <div aria-hidden="true" className="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
           Read article
           <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-1" />
         </div>
       </div>
       <time
-        className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500"
+        className="mt-1 hidden md:block relative z-10 order-first mb-3 items-center text-sm text-zinc-700 dark:text-zinc-300"
         dateTime="2022-09-05"
       >
         {date}
