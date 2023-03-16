@@ -2,6 +2,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid';
 import type { GetServerSidePropsContext, NextPage } from 'next';
 import Head from 'next/head';
 import { Layout } from '../components/Layout';
+import Image from 'next/image';
 
 interface AboutPageProps {
   resolvedUrl: string;
@@ -19,12 +20,13 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
                   <div className="max-w-xs pl-9 sm:px-2.5 lg:max-w-none">
-                    <img
+                    <Image
                       alt=""
                       sizes="(min-width: 1024px) 32rem, 20rem"
                       src="/images/profile_photo.jpeg"
-                      width="800"
-                      height="800"
+                      width={800}
+                      height={800}
+                      priority={true}
                       decoding="async"
                       data-nimg="1"
                       className="aspect-square rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
