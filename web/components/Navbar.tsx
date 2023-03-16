@@ -19,11 +19,11 @@ export const Navbar: React.FC<NavbarProps> = ({ resolvedUrl }) => {
               className={classNames('py-1.5 w-28 md:w-32 flex flex-col items-center justify-center', {
                 'rounded-l-lg': index === 0,
                 'rounded-r-lg': index === DefaultHeaders.length - 1,
-                'rounded-l-3xl text-blue-500 shadow-inner': resolvedUrl == header.href && index === 0,
-                'rounded-r-3xl text-blue-500 shadow-inner':
+                'font-semibold rounded-l-3xl text-blue-500 shadow-inner': resolvedUrl == header.href && index === 0,
+                'font-semibold rounded-r-3xl text-blue-500 shadow-inner':
                   resolvedUrl == header.href && index === DefaultHeaders.length - 1,
-                'text-blue-500 shadow-inner': resolvedUrl === header.href,
-                'hover:text-blue-400 hover:dark:text-zinc-200': resolvedUrl !== header.href,
+                'font-semibold text-blue-500 shadow-inner': resolvedUrl === header.href,
+                'hover:text-blue-500 hover:dark:text-zinc-200': resolvedUrl !== header.href,
               })}
             >
               <span className="text-center">{header.title}</span>
