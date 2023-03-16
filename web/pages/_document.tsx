@@ -2,9 +2,13 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 const Document: React.FC = () => {
   return (
-    <Html className="antialiased min-h-screen bg-zinc-50 dark:bg-black" lang='en'>
+    <Html className="antialiased min-h-screen bg-zinc-50 dark:bg-black" lang="en">
       <Head>
         <title>Santiago Aguirre - Portfolio</title>
+        <meta
+          name="Santiago Aguirre's Portfolio"
+          content="Santiago Aguirre's Portfolio - Review his Articles, Projects and personal information."
+        />
         <meta property="og:title" content="Santiago Aguirre - Portfolio" key="title" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
