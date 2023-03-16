@@ -6,7 +6,7 @@ const Document: React.FC = () => {
       <Head>
         <title>Santiago Aguirre - Portfolio</title>
         <meta
-          name="Santiago Aguirre's Portfolio"
+          name="description"
           content="Santiago Aguirre's Portfolio - Review his Articles, Projects and personal information."
         />
         <meta property="og:title" content="Santiago Aguirre - Portfolio" key="title" />
