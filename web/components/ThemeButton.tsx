@@ -4,7 +4,10 @@ import { Transition } from '@headlessui/react';
 import { Fragment, useEffect, useState } from 'react';
 import classNames from 'classnames';
 
-export const ThemeButton: React.FC = () => {
+interface ThemeButton {
+  className?: string;
+}
+export const ThemeButton: React.FC<ThemeButton> = ({ className = '' }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
   const updateTheme = (): void => {
@@ -18,15 +21,18 @@ export const ThemeButton: React.FC = () => {
   return (
     <>
       {!mounted && (
-        <div className="p-3">
+        <div className={classNames('p-3', className)}>
           <div className="h-5 w-5"></div>
         </div>
       )}
       {mounted && (
         <button
-          aria-label='Update Theme'
+          aria-label="Update Theme"
           onClick={updateTheme}
-          className="cursor-pointer surrounding-border hover:text-zinc-500 text-zinc-400 dark:hover:text-zinc-400 dark:text-zinc-500 shadow-md rounded-full p-3 flex flex-col items-center justify-center"
+          className={classNames(
+            'cursor-pointer surrounding-border hover:text-zinc-500 text-zinc-400 dark:hover:text-zinc-400 dark:text-zinc-500 shadow-md rounded-full p-3 flex flex-col items-center justify-center',
+            className
+          )}
         >
           <Transition
             as={Fragment}

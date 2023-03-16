@@ -30,36 +30,39 @@ export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }
   }, [resolvedUrl]);
 
   return (
-    <div className="flex flex-row items-center justify-end gap-3 sm:justify-between w-full pt-2 max-w-4xl px-3">
+    <div className="flex flex-row items-center gap-3 justify-between w-full pt-2 max-w-4xl px-3">
       <Head>
         <title>{titleFromResolvedUrl}</title>
         <meta property="og:title" content="Santiago Aguirre - Portfolio" key="title" />
       </Head>
-      <Link href="/" aria-label='Link home'>
+      <Link href="/" aria-label="Link home">
         <div
-          className={classNames(
-            'flex flex-col items-center justify-center mr-auto sm:mr-0 surrounding-border rounded-full',
-            {
-              'p-1': !hideImage,
-              'p-3': hideImage,
-            }
-          )}
+          className={classNames('flex flex-col items-center justify-center w-full surrounding-border rounded-full', {
+            'p-1': !hideImage,
+            'p-3': hideImage,
+          })}
         >
           {hideImage && <HomeIcon className="h-5 w-5 text-blue-400" />}
           {!hideImage && (
-            <Image
-              height={44}
-              width={44}
-              priority={true}
-              src="/images/profile_photo.jpeg"
-              className="h-9 w-9 rounded-full bg-white"
-              alt="Profile Picture"
-            />
+            <div className="h-9 w-9">
+              <Image
+                height={36}
+                width={36}
+                priority={true}
+                src="/images/profile_photo.jpeg"
+                className="w-full h-full rounded-full bg-white"
+                alt="Profile Picture"
+              />
+            </div>
           )}
         </div>
       </Link>
-      <Navbar resolvedUrl={resolvedUrl} />
-      <ThemeButton />
+      <div className="flex flex-row items-center justify-end sm:hidden w-full gap-3">
+        <Navbar resolvedUrl={resolvedUrl} />
+        <ThemeButton />
+      </div>
+      <Navbar className="hidden sm:flex" resolvedUrl={resolvedUrl} />
+      <ThemeButton className="hidden sm:flex" />
     </div>
   );
 };
