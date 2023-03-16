@@ -7,6 +7,7 @@ const Document: React.FC = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
       <body className="dark:bg-zinc-800">
         <Main />
