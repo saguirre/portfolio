@@ -47,7 +47,7 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                     <p>
                       During college, I had the opportunity to work as a Fullstack Engineer and gain valuable experience
                       with React, Node, and Angular. I was fortunate to have my skills and expertise recognized, and as
-                      a result, I was offered positions with companies both in Uruguay and beyond.
+                      a result, I was offered positions with companies both in Uruguay and the US.
                     </p>
                     <p>
                       While I'm proud of what I've accomplished, I know that there is always more to learn and that I
