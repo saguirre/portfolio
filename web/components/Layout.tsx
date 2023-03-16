@@ -41,7 +41,7 @@ export const Layout: React.FC<LayoutProps> = ({ resolvedUrl, hideImage, children
                             Tools
                           </a>
                         </div>
-                        <p className="text-sm text-zinc-400 dark:text-zinc-500">
+                        <p className="text-sm text-zinc-700 dark:text-zinc-300">
                           ©2023 Santiago Aguirre. All rights reserved.
                         </p>
                       </div>
