@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .surrounding-border {
+    @apply border dark:hover:border-zinc-600 border-zinc-200 dark:border-zinc-700/80;
+  }
+}
