@@ -31,7 +31,7 @@ export const WorkHistory: React.FC = () => {
         />
       </ol>
       <a
-        className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm transition active:transition-none bg-blue-400 font-medium text-white hover:bg-blue-500/90 active:bg-blue-500 active:text-white/90 group mt-6 w-full"
+        className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm transition active:transition-none bg-blue-500 font-medium text-white hover:bg-blue-500/90 active:bg-blue-500 active:text-white/90 group mt-6 w-full"
         href="/files/resume_santiago_aguirre.pdf"
         target="_blank"
         rel="noopener noreferrer"

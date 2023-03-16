@@ -38,9 +38,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                         height={32}
                         priority={true}
                         decoding="async"
-                        data-nimg="1"
                         className="h-8 w-8 rounded-full"
-                        loading="lazy"
                       />
                     </div>
                     <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">

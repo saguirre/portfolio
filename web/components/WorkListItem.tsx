@@ -18,9 +18,7 @@ export const WorkListItem: React.FC<WorkListItemProps> = ({ companyName, dateSta
           height={32}
           priority={true}
           decoding="async"
-          data-nimg="1"
           className="h-7 w-7 rounded-full"
-          loading="lazy"
         />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">

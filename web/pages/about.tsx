@@ -28,9 +28,7 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                       height={800}
                       priority={true}
                       decoding="async"
-                      data-nimg="1"
                       className="aspect-square rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
-                      loading="lazy"
                     />
                   </div>
                 </div>
