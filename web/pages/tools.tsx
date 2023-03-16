@@ -1,12 +1,12 @@
 import type { GetServerSidePropsContext, NextPage } from 'next';
-import { DesktopLayout } from '../components/DesktopLayout';
+import { Layout } from '../components/Layout';
 
 interface ProjectsPageProps {
   resolvedUrl: string;
 }
 const Tools: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
   return (
-    <DesktopLayout resolvedUrl={resolvedUrl}>
+    <Layout resolvedUrl={resolvedUrl}>
       <div className="sm:px-8 mt-16 sm:mt-32">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">
@@ -200,7 +200,7 @@ const Tools: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
           </div>
         </div>
       </div>
-    </DesktopLayout>
+    </Layout>
   );
 };
 

@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 import { ArticleCard } from '../components/ArticleCard';
-import { DesktopLayout } from '../components/DesktopLayout';
+import { Layout } from '../components/Layout';
 import { SubscribeToMailList } from '../components/SubscribeToMailList';
 import { WorkHistory } from '../components/WorkHistory';
 
 const Home: NextPage = () => {
   return (
-    <DesktopLayout resolvedUrl="">
+    <Layout resolvedUrl="">
       <div className="mt-24 flex flex-col items-start justify-start w-full max-w-2xl lg:max-w-5xl">
         <div className="pl-4 sm:p-0 max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-    </DesktopLayout>
+    </Layout>
   );
 };
 
