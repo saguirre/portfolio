@@ -17,9 +17,9 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
-              <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+              <div className="w-full grid grid-cols-1 gap-y-10 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
-                  <div className="max-w-xs pl-9 sm:px-2.5 lg:max-w-none">
+                  <div className="w-full flex flex-col items-center justify-center sm:max-w-xs px-2.5 lg:pl-9">
                     <Image
                       alt=""
                       sizes="(min-width: 1024px) 32rem, 20rem"
@@ -32,6 +32,7 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                     />
                   </div>
                 </div>
+
                 <div className="lg:order-first lg:row-span-2">
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                     I'm Santiago Aguirre, a Fullstack Engineer with a passion for Web development.
