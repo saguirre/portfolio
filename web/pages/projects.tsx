@@ -52,7 +52,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                       FANTASY SPORTS. REAL OWNERSHIP. Bringing basketball to the blockchain. Draft, Train, and
                       Strategize your way to running the court and winning real money competitions!
                     </p>
-                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
                       <LinkIcon className="w-5 h-5 flex-none" />
                       <span className="ml-2">playswoops.com</span>
                     </p>
@@ -72,7 +72,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                       Bill Tracking website with group expense sharing capability. Built this over a small period of
                       time and still have a gigantic list of features I want to add to it. Check it out!
                     </p>
-                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
                       <LinkIcon className="w-5 h-5 flex-none" />
                       <span className="ml-2">bill-tracker-pi.vercel.app</span>
                     </p>
@@ -93,7 +93,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                       complete, featuring a set of themes, translation, Single Sign on integration and a very responsive
                       and fast experience for users in any platform!
                     </p>
-                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
                       <LinkIcon className="w-5 h-5 flex-none" />
                       <span className="ml-2">jatdl.io</span>
                     </p>
