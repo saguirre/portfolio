@@ -10,11 +10,9 @@ import { MarkdownFrontmatter } from '../../models/MarkdownFrontmatter';
 
 const CodeBlock = ({ language, value }: { language: string; value: string }) => {
   return (
-    <div>
-      <SyntaxHighlighter style={vscDarkPlus} language={language}>
-        {value}
-      </SyntaxHighlighter>
-    </div>
+    <SyntaxHighlighter style={vscDarkPlus} language={language}>
+      {value}
+    </SyntaxHighlighter>
   );
 };
 
@@ -70,8 +68,8 @@ const Article: NextPage<ArticleProps> = ({ articleData }: ArticleProps) => {
       <Head>
         <meta name="Article page" content="View this interesting article about Web Development" />
       </Head>
-      <div className="mt-6 sm:mt-12 lg:mt-24 flex flex-col items-start justify-start w-full max-w-2xl lg:max-w-5xl">
-        <div className="max-w-4xl px-4 sm:px-0">
+      <div className="mt-24 flex flex-col items-start justify-start w-full max-w-2xl lg:max-w-5xl">
+        <div className="w-full max-w-2xl sm:max-w-4xl px-4 sm:px-0">
           <div className="markdown-body">
             <h1>{title}</h1>
             <time
