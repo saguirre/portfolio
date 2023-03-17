@@ -21,10 +21,12 @@ For our example, we'll use **Next.js** to create a simple JAMstack blog applicat
 
 To create a JAMstack blog using **Next.js**, follow these steps:
 
-1.  Set up your development environment:
-
-    - Install Node.js (v14.0 or later) and npm (v5.2 or later).
-    - Install the Next.js CLI globally: `npm install -g create-next-app`
+1. Set up your development environment:
+    1. Install Node.js (v14.0 or later) and npm (v5.2 or later).
+    2. Install the Next.js CLI globally: 
+      ```
+      npm install -g create-next-app
+      ```
 
 2.  Create a new Next.js project:
 
