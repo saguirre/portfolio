@@ -66,6 +66,12 @@ const Home: NextPage = () => {
                   href="/harnessing-the-power-of-machine-learning"
                 />
                 <ArticleCard
+                  title="The Age of JAMstack: Enhancing Performance, Scalability, and Security in Modern Web Development"
+                  date="March 2, 2023"
+                  paragraph="Let's uncover the transformative power of JAMstack together, showcasing popular frameworks like Next.js, Gatsby, and Nuxt.js. I'll guide you through how this cutting-edge architecture elevates site performance, scalability, and security."
+                  href="/the-age-of-jamstack"
+                />
+                <ArticleCard
                   title="UX/UI Design Trends for a Post-Pandemic World: How Remote Work and Digital Transformation Shape User Experience"
                   date="February 8, 2023"
                   paragraph="We'll investigate how remote work and digitalization influence UX/UI design trends. Gain insights into the latest approaches and best practices for creating user-centric, accessible web interfaces in a rapidly evolving digital landscape."

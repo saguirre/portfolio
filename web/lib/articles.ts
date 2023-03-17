@@ -1,26 +1,35 @@
 import fs from 'fs';
 import path from 'path';
-import matter from 'gray-matter';
+import { parseMarkdownWithYamlFrontmatter } from './extract-metadata-from-markdown';
+
+interface MarkdownFrontmatter {
+  title: string;
+  date: string;
+}
+
+interface ArticleNameParams {
+  params: { article: string };
+}
+
+export interface ArticleData {
+  article: string;
+  content: string;
+  title: string;
+  date: string;
+}
 
 const articlesDirectory = path.join(process.cwd(), 'articles');
 
-export const getSortedArticlesData = () => {
+export const getSortedArticlesData = (): ArticleData[] => {
   const fileNames = fs.readdirSync(articlesDirectory);
-  const allArticlesData = fileNames.map((fileName) => {
-    const article = fileName.replace(/\.md$/, '');
-    const fullPath = path.join(articlesDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const matterResult = matter(fileContents);
-    return {
-      article,
-      ...(matterResult.data as { date: string; title: string }),
-    };
+  const allArticlesData: ArticleData[] = fileNames.map((fileName) => {
+    return getArticleData(fileName);
   });
 
   return allArticlesData.sort((a, b) => (a.date < b.date ? 1 : -1));
 };
 
-export const getAllArticleIds = () => {
+export const getAllArticleNames = (): ArticleNameParams[] => {
   const fileNames = fs.readdirSync(articlesDirectory);
   return fileNames.map((fileName) => {
     return {
@@ -31,12 +40,15 @@ export const getAllArticleIds = () => {
   });
 };
 
-export const getArticleData = async (article: string) => {
+export const getArticleData = (article: string): ArticleData => {
   const fullPath = path.join(articlesDirectory, `${article}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
-
+  const markdownMetadata = parseMarkdownWithYamlFrontmatter<MarkdownFrontmatter>(fileContents.toString());
+  const { title, date, content } = markdownMetadata;
   return {
     article,
-    contentHtml: fileContents.toString(),
+    title,
+    date,
+    content,
   };
 };

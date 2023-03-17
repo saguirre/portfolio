@@ -1,6 +1,5 @@
 ---
 title: Harnessing the Power of Machine Learning in Frontend Development - Tools and Techniques for Smarter UI/UX
-
 date: 2023-03-13
 ---
 
