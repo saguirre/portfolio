@@ -34,10 +34,10 @@ export const Layout: React.FC<LayoutProps> = ({ resolvedUrl, hideImage, children
                           <a className="transition hover:text-blue-500 dark:hover:text-blue-400" href="/projects">
                             Projects
                           </a>
-                          <a className="transition hover:text-blue-500 dark:hover:text-blue-400" href="/speaking">
+                          <a className="transition hover:text-blue-500 dark:hover:text-blue-400" href="/articles">
                             Articles
                           </a>
-                          <a className="transition hover:text-blue-500 dark:hover:text-blue-400" href="/uses">
+                          <a className="transition hover:text-blue-500 dark:hover:text-blue-400" href="/tools">
                             Tools
                           </a>
                         </div>

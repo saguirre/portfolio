@@ -4,7 +4,6 @@ const Document: React.FC = () => {
   return (
     <Html className="antialiased min-h-screen bg-zinc-50 dark:bg-black" lang="en">
       <Head>
-        <title>Santiago Aguirre - Portfolio</title>
         <meta
           name="description"
           content="Santiago Aguirre's Portfolio - Review his Articles, Projects and personal information."
