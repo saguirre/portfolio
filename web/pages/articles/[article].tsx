@@ -91,7 +91,7 @@ const Article: NextPage<ArticleProps> = ({ articleData }: ArticleProps) => {
                   <code
                     className={
                       className +
-                      ' mx-1 bg-zinc-300 dark:bg-zinc-700 rounded-md py-1 px-1.5 text-zinc-600 dark:text-zinc-300'
+                      ' mx-1 bg-zinc-300 dark:bg-zinc-700 rounded-md py-0.5 sm:py-1 px-1.5 text-zinc-600 dark:text-zinc-300'
                     }
                     {...props}
                   >
