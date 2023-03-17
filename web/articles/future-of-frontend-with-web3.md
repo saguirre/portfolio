@@ -1,6 +1,6 @@
 ---
 title: The Future of Frontend Development with Web3
-date: 2023-01-13
+date: 2023-01-16
 ---
 
 ## Introduction to Web3 and Its Benefits

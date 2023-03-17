@@ -73,7 +73,7 @@ const Home: NextPage = () => {
                 />
                 <ArticleCard
                   title="The Future of Frontend Development with Web3"
-                  date="January 13, 2023"
+                  date="January 16, 2023"
                   paragraph="Web3 is revolutionizing the way we build and interact with web applications. In this article, we'll explore how
         Web3 offers exciting new possibilities for frontend development, from smart contracts to decentralized
         applications. Discover the potential of Web3 for the future of the industry."
