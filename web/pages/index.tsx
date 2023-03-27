@@ -88,7 +88,7 @@ const Home: NextPage = () => {
               </div>
               <div className="space-y-10 lg:pl-16 xl:pl-24">
                 <WorkHistory />
-                <SubscribeToMailList />
+                {/* <SubscribeToMailList /> */}
               </div>
             </div>
           </div>
