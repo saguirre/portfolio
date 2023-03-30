@@ -77,27 +77,6 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
                       <span className="ml-2">bill-tracker-pi.vercel.app</span>
                     </p>
                   </li>
-                  <li className="group relative flex flex-col items-start">
-                    <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                      <ListBulletIcon className="h-8 w-8 text-blue-500" />
-                    </div>
-                    <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                      <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                      <a href="https://www.jatdl.io/">
-                        <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                        <span className="relative z-10">Just Another To-Do List</span>
-                      </a>
-                    </h2>
-                    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                      Yeah, as the title suggests, yet another To-Do List app. However, you'll find that it's pretty
-                      complete, featuring a set of themes, translation, Single Sign on integration and a very responsive
-                      and fast experience for users in any platform!
-                    </p>
-                    <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
-                      <LinkIcon className="w-5 h-5 flex-none" />
-                      <span className="ml-2">jatdl.io</span>
-                    </p>
-                  </li>
                 </ul>
               </div>
             </div>
