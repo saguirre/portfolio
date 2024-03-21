@@ -101,10 +101,10 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
                     <li className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
                       <a
                         className="group flex text-sm font-medium text-zinc-800 transition hover:text-blue-500 dark:text-zinc-200 dark:hover:text-blue-500"
-                        href="mailto:spencer@planetaria.tech"
+                        href="mailto:saguirrews@gmail.com"
                       >
                         <EnvelopeIcon className="h-6 w-6 -mt-[0.5px] fill-zinc-500 transition group-hover:fill-blue-500" />
-                        <span className="ml-2">santiago.aguirre@hey.com</span>
+                        <span className="ml-2">saguirrews@gmail.com</span>
                       </a>
                     </li>
                   </ul>
