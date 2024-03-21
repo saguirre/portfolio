@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout';
 
 const FourOhFour: NextPage = () => {
   return (
-    <Layout resolvedUrl="/not-found">
+    <Layout>
       <Head>
         <meta name="Not found page" content="Page wasn't found, but here's a story!" />
       </Head>

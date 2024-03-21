@@ -1,15 +1,12 @@
-import { BanknotesIcon, LinkIcon, ListBulletIcon } from '@heroicons/react/24/outline';
-import type { GetServerSidePropsContext, NextPage } from 'next';
+import { BanknotesIcon, LinkIcon } from '@heroicons/react/24/outline';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Layout } from '../components/Layout';
 
-interface ProjectsPageProps {
-  resolvedUrl: string;
-}
-const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
+const Projects: NextPage = () => {
   return (
-    <Layout resolvedUrl={resolvedUrl}>
+    <Layout>
       <Head>
         <meta name="Projects page" content="Projects built buy Santiago Aguirre as a Fullstack Engineer" />
       </Head>
@@ -87,12 +84,4 @@ const Projects: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
   );
 };
 
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const { resolvedUrl } = context;
-  return {
-    props: {
-      resolvedUrl,
-    },
-  };
-}
 export default Projects;

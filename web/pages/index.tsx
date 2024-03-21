@@ -2,12 +2,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ArticleCard } from '../components/ArticleCard';
 import { Layout } from '../components/Layout';
-import { SubscribeToMailList } from '../components/SubscribeToMailList';
 import { WorkHistory } from '../components/WorkHistory';
 
 const Home: NextPage = () => {
   return (
-    <Layout resolvedUrl="">
+    <Layout>
       <Head>
         <meta
           name="Home page"

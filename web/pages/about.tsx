@@ -1,15 +1,12 @@
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
-import type { GetServerSidePropsContext, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Layout } from '../components/Layout';
 import Image from 'next/image';
 
-interface AboutPageProps {
-  resolvedUrl: string;
-}
-const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
+const About: NextPage = () => {
   return (
-    <Layout resolvedUrl={resolvedUrl} hideImage>
+    <Layout hideImage>
       <Head>
         <meta name="About page" content="All of Santiago Aguirre's personal information - plus an introduction." />
       </Head>
@@ -117,14 +114,5 @@ const About: NextPage<AboutPageProps> = ({ resolvedUrl }) => {
     </Layout>
   );
 };
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const { resolvedUrl } = context;
-  return {
-    props: {
-      resolvedUrl,
-    },
-  };
-}
 
 export default About;

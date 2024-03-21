@@ -1,13 +1,10 @@
-import type { GetServerSidePropsContext, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Layout } from '../components/Layout';
 
-interface ProjectsPageProps {
-  resolvedUrl: string;
-}
-const Tools: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
+const Tools: NextPage = () => {
   return (
-    <Layout resolvedUrl={resolvedUrl}>
+    <Layout>
       <Head>
         <meta name="Tools page" content="Santiago Aguirre's most used Tools" />
       </Head>
@@ -207,14 +204,5 @@ const Tools: NextPage<ProjectsPageProps> = ({ resolvedUrl }) => {
     </Layout>
   );
 };
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const { resolvedUrl } = context;
-  return {
-    props: {
-      resolvedUrl,
-    },
-  };
-}
 
 export default Tools;

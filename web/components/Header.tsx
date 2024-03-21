@@ -6,18 +6,21 @@ import Link from 'next/link';
 import { useMemo } from 'react';
 import { Navbar } from './Navbar';
 import { ThemeButton } from './ThemeButton';
+import { useRouter } from 'next/router';
 
 interface HeaderProps {
-  resolvedUrl: string;
   hideImage?: boolean;
 }
-export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }) => {
+export const Header: React.FC<HeaderProps> = ({ hideImage = false }) => {
+  const router = useRouter();
+  const path = router.asPath;
+
   const titleFromResolvedUrl = useMemo(() => {
-    switch (resolvedUrl) {
+    switch (path) {
       case '/about':
         return 'About';
-      case '/projects':
-        return 'Projects';
+      // case '/projects':
+      //   return 'Projects';
       case '/articles':
         return 'Articles';
       case '/tools':
@@ -27,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }
       default:
         return 'Santiago Aguirre - Portfolio';
     }
-  }, [resolvedUrl]);
+  }, [path]);
 
   return (
     <div className="flex flex-row items-center gap-3 justify-between w-full pt-2 max-w-4xl px-3">
@@ -58,10 +61,10 @@ export const Header: React.FC<HeaderProps> = ({ resolvedUrl, hideImage = false }
         </div>
       </Link>
       <div className="flex flex-row items-center justify-end sm:hidden w-full gap-3">
-        <Navbar resolvedUrl={resolvedUrl} />
+        <Navbar />
         <ThemeButton />
       </div>
-      <Navbar className="hidden sm:flex" resolvedUrl={resolvedUrl} />
+      <Navbar className="hidden sm:flex" />
       <ThemeButton className="hidden sm:flex" />
     </div>
   );

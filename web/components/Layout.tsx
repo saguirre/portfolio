@@ -3,11 +3,10 @@ import { Header } from './Header';
 import PacmanLoader from 'react-spinners/PacmanLoader';
 
 interface LayoutProps {
-  resolvedUrl: string;
   hideImage?: boolean;
   children?: React.ReactNode;
 }
-export const Layout: React.FC<LayoutProps> = ({ resolvedUrl, hideImage, children }) => {
+export const Layout: React.FC<LayoutProps> = ({ hideImage, children }) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export const Layout: React.FC<LayoutProps> = ({ resolvedUrl, hideImage, children
     <div className="min-h-screen flex flex-col items-center justify-start w-full bg-zinc-100 dark:bg-zinc-900">
       {!loading && (
         <div className="py-2 w-full flex flex-col items-center justify-start max-w-6xl shadow-lg border-x border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 rounded-b-lg">
-          <Header resolvedUrl={resolvedUrl} hideImage={hideImage} />
+          <Header hideImage={hideImage} />
           {children}
           <footer className="mt-32">
             <div className="sm:px-8">

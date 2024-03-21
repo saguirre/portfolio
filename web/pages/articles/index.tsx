@@ -1,14 +1,11 @@
-import type { GetServerSidePropsContext, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ArticleFullCard } from '../../components/ArticleFullCard';
 import { Layout } from '../../components/Layout';
 
-interface ArticlesPageProps {
-  resolvedUrl: string;
-}
-const Articles: NextPage<ArticlesPageProps> = ({ resolvedUrl }) => {
+const Articles: NextPage = () => {
   return (
-    <Layout resolvedUrl={resolvedUrl}>
+    <Layout>
       <Head>
         <meta name="Articles page" content="Santiago Aguirre's Articles" />
       </Head>
@@ -60,14 +57,5 @@ const Articles: NextPage<ArticlesPageProps> = ({ resolvedUrl }) => {
     </Layout>
   );
 };
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const { resolvedUrl } = context;
-  return {
-    props: {
-      resolvedUrl,
-    },
-  };
-}
 
 export default Articles;
