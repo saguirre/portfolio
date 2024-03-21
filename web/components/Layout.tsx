@@ -41,7 +41,7 @@ export const Layout: React.FC<LayoutProps> = ({ hideImage, children }) => {
                           </a>
                         </div>
                         <p className="text-sm text-zinc-700 dark:text-zinc-300">
-                          ©2023 Santiago Aguirre. All rights reserved.
+                          ©2024 Santiago Aguirre. All rights reserved.
                         </p>
                       </div>
                     </div>
