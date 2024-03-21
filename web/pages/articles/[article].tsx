@@ -52,7 +52,7 @@ const Article: NextPage<ArticleProps> = ({ articleData }: ArticleProps) => {
     }
   };
   return (
-    <Layout resolvedUrl="/articles">
+    <Layout>
       <Head>
         <meta name="Article page" content="View this interesting article about Web Development" />
       </Head>
